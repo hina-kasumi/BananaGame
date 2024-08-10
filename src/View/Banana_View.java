@@ -6,12 +6,13 @@ import Model.Banana_Model;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseListener;
 
 
 public class Banana_View extends JFrame {
     public final Banana_Model bananaModel = new Banana_Model();
     public JLabel jLabel_score, jLabel_highestPoint;
-    private final Theme[] themes = new Theme[3];
+    private final Theme[] themes = new Theme[4];
     private JButton jButton_Up;
     private final JPanel jPanel = new JPanel(new GridBagLayout());
     private final Font font = new Font("Arial", Font.BOLD, 50); // tạo font chữ
@@ -117,6 +118,7 @@ public class Banana_View extends JFrame {
         themes[0] = new Theme(194, 230, 47, "BananaButton");
         themes[1] = new Theme(26, 186, 90, "maomao");
         themes[2] = new Theme(26, 186, 90, "avocado");
+        themes[3] = new Theme(26, 186, 90, "maomaoEating");
 
         resetScreen(); // hiển thị theme
 

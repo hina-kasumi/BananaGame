@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Banana_Model {
-    private long counter = 0;
+    private long counter = 145632;
     public int choseTheme = 0;
     //File lấy dữ liệu điểm cao nhất (System.getProperty("user.dir") : lấy địa chỉ của dự án)
     private final File highestPoint = new File(System.getProperty("user.dir") + "\\src\\Model\\highestPoint.txt");// lầy file từ src
